@@ -55,3 +55,7 @@ nvidia-smi --query-gpu=name,index,temperature.gpu,utilization.gpu,utilization.me
   - targets: ['localhost:9101']
 ```
 
+### Install as a Windows Service
+```
+sc.exe create nvidia_smi_exporter binPath= <GOPATH>bin\nvidia_smi_exporter.exe
+```
